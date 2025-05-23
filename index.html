@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak-tebakan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Tebak-tebakan</h1>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <p>Tes seberapa banyak pengetahuanmu👇</p>
+            <button id="start-btn">Mulai</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-info">
+                <p>
+                    Pertanyaan <span id="current-question">1</span> dari <span id="total-questions">0</span>
+                </p>
+                <p>
+                    Nilai <span id="score">0</span>
+                </p>
+            </div>
+            <div class="quiz-header">
+                <h2 id="question-text">Soal</h2>
+            </div>
+            
+            <div id="answers-container" class="answers-container">
+                <button class="answer-btn" id="answer-btn">ansewer</button>
+                <button class="answer-btn" id="answer-btn">ansewer</button>
+                <button class="answer-btn" id="answer-btn">ansewer</button>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen ">
+            <h2>Hasil</h2>
+            <div class="result-info">
+                <p>Nilai kamu <span id="final-score">0</span> dari <span id="max-score">0</span></p>
+                <div class="result-message">Kerja Bagus!</div>
+            </div>
+            <button id="restart-btn">Ulang</button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
